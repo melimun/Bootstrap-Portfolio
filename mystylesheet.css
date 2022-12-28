@@ -10,3 +10,156 @@ body{
 }
 
 /* nav */
+
+.nav-item a:hover{
+    color: rgb(219, 178, 201);
+}
+
+
+/* socials */
+.social-links a{
+    display: inline;
+    margin: 0.3em;
+}
+
+.social-links img{
+    filter: invert(14%) sepia(38%) saturate(7158%) hue-rotate(302deg) brightness(92%) contrast(115%);
+}
+
+.search-bar{
+    margin: 1em 1em;
+}
+
+/* wave */
+
+#wave {
+    max-width: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -99;
+}
+.svg-container {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+/* floating shapes */
+
+
+  .shapes .square { 
+    position: absolute; 
+    top: 100px;
+    left: 700px;
+    width: 30px; 
+    height: 30px; 
+    background-color: transparent; 
+    border: 3px solid #ffffff;
+    transition: border-color .4s ease; 
+    -webkit-transition: border-color .4s ease; 
+  }
+  
+  .shapes .circle { 
+    position: absolute; 
+    top: 250px;
+    left: 700px;
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+    background-color: transparent; 
+    border: 3px solid #ffffff;
+    transition: border-color .4s ease; 
+    -webkit-transition: border-color .4s ease; 
+  }
+  
+  .shapes .triangle {
+    position: absolute; 
+    width: 60px; 
+    height: 60px; 
+    top: 150px; 
+    left: 1200px; 
+  }
+  
+  .float {
+    -webkit-animation-name: Floating;
+      -webkit-animation-duration: 6s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: ease-in-out;
+  }
+  
+  @-webkit-keyframes Floating{
+      from {-webkit-transform:translate(0, 0px);}
+      65% {-webkit-transform:translate(0, 50px);}
+      to {-webkit-transform: translate(0, -0px);    }    
+  }
+  
+  .spin {
+    -webkit-animation-name: Spinning;
+      -webkit-animation-duration: 12s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: ease-in-out;
+  }
+  
+  @-webkit-keyframes Spinning{
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    } 
+  }
+
+
+/* sections */
+
+.intro-section{
+    margin: 1em;
+    text-align: center;
+}
+
+#intro-text{
+    color: #93006A;
+    z-index: 1;
+}
+
+#selfie{
+    max-width: 100%;
+    width: 25em;
+    height: 23em;
+}
+
+
+#project-title{
+    text-align: center;
+    font-weight: bold;
+}
+
+.projects-section{
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+    padding: 1.25em;
+}
+
+.card{
+    display: block;
+    background-color: #FFF5FE !important;
+    flex-basis: 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+    padding: 0.75rem;
+}
+
+.card{
+    max-width: 100%;
+    margin: 1em;
+}
